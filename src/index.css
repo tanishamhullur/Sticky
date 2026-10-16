@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-editorial: "Fraunces", Georgia, serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #FBF9F5;
+  color: #242320;
+}
+
+/* Light sweep gradient effect on text */
+@keyframes sweepLight {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.text-sweep {
+  background: linear-gradient(
+    105deg,
+    #242320 0%,
+    #242320 35%,
+    #e8dcc4 50%,
+    #242320 65%,
+    #242320 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: sweepLight 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Sparkle twinkle animation */
+@keyframes sparkleTwinkle {
+  0%, 100% {
+    opacity: 0;
+    transform: scale(0.3) rotate(0deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1) rotate(45deg);
+  }
+}
+
+.animate-sparkle-1 {
+  animation: sparkleTwinkle 3.2s ease-in-out infinite 0.4s;
+}
+
+.animate-sparkle-2 {
+  animation: sparkleTwinkle 3.8s ease-in-out infinite 1.8s;
+}
+
+.animate-sparkle-3 {
+  animation: sparkleTwinkle 4.2s ease-in-out infinite 2.6s;
+}
+
+/* Partner Logo Marquee animation */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-container:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 35s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .text-sweep {
+    animation: none;
+    color: #242320;
+    background: none;
+  }
+  .animate-sparkle-1,
+  .animate-sparkle-2,
+  .animate-sparkle-3 {
+    animation: none;
+    opacity: 0;
+  }
+  .marquee-track {
+    animation: none;
+    overflow-x: auto;
+  }
+}
+

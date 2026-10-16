@@ -1,0 +1,211 @@
+import { Product, Testimonial } from '../types';
+
+export const HERO_IMAGE = '/src/assets/images/hero_bamboo_lifestyle_1791951460838.jpg';
+export const STORY_IMAGE = '/src/assets/images/story_bamboo_philosophy_1791951462036.jpg';
+export const MASCOT_STICKY_IMAGE = '/src/assets/images/sticky_bamboo_mascot_1791954761462.jpg';
+
+export const PRODUCTS: Product[] = [
+  {
+    id: 'bamboo-straw-set',
+    name: 'Everyday Bamboo Straw Set',
+    category: 'On the Go',
+    material: '100% Solid Natural Moso Bamboo',
+    price: 499,
+    originalPrice: 599,
+    image: '/src/assets/images/product_bamboo_straws_1791951462045.jpg',
+    shortDescription: 'Pack of 6 whole-stem polished bamboo straws with natural coconut fiber cleaning brush and linen pouch.',
+    fullDescription: 'Crafted from sustainably harvested fast-growth bamboo stalks, our Everyday Straws are steam-sanitized, smoothly hand-buffed, and completely free of artificial sealants or plastics. Naturally water-resistant and durable enough for hundreds of hot or iced drinks.',
+    details: [
+      'Pack includes: 6 natural straws + 1 coconut fiber bristle brush + organic cotton linen sleeve',
+      'Length: 20cm (Standard) or 24cm (Smoothie / Tall)',
+      'Zero taste transfer, smooth lip finish',
+      'Naturally antibacterial and zero microplastics',
+    ],
+    care: 'Rinse with warm water and the included natural brush. Air dry vertically. Occasional rub with edible coconut oil maintains natural luster.',
+    variants: {
+      type: 'variant',
+      label: 'Straw Caliber',
+      options: [
+        { name: 'Standard (8mm)', value: 'standard' },
+        { name: 'Smoothie / Boba (11mm)', value: 'smoothie' },
+      ],
+    },
+    inStock: true,
+  },
+  {
+    id: 'straw-kit-travel',
+    name: 'On-the-Go Reusable Straw Kit',
+    category: 'On the Go',
+    material: 'Natural Bamboo & Heavy Cotton Canvas',
+    price: 699,
+    originalPrice: 799,
+    image: '/src/assets/images/product_straw_kit_1791951498136.jpg',
+    shortDescription: 'Compact roll-up travel case with 2 regular straws, 2 wide straws, and plant-fiber cleaner.',
+    fullDescription: 'Designed for effortless portability. The roll-up unbleached canvas kit fits easily into your daily tote, backpack, or car console. Keeps your clean and used straws isolated with individual compartments.',
+    details: [
+      'Set includes: 4 bamboo straws (2 standard, 2 smoothie) + cleaning brush',
+      'Custom unbleached cotton-linen travel wrap with elastic secure loop',
+      'Laser-etched minimal STICKS logo mark',
+      'Lightweight (only 65g all inclusive)',
+    ],
+    care: 'Machine-wash pouch on gentle cold cycle. Hand-wash straws with warm water and dry thoroughly before rolling into pouch.',
+    variants: {
+      type: 'color',
+      label: 'Sleeve Color',
+      options: [
+        { name: 'Unbleached Canvas', value: 'canvas', colorHex: '#EAE5D9' },
+        { name: 'Muted Olive', value: 'olive', colorHex: '#4A5B4C' },
+      ],
+    },
+    inStock: true,
+  },
+  {
+    id: 'kitchen-utensils-set',
+    name: 'Minimal Bamboo Kitchen Utensil Set',
+    category: 'Kitchen',
+    material: 'Dense Moso Bamboo with Organic Tung Oil',
+    price: 1299,
+    originalPrice: 1499,
+    image: '/src/assets/images/product_bamboo_kitchenware_1791951461932.jpg',
+    shortDescription: '5-piece essential cooking collection: cooking spoon, slotted spoon, flat spatula, corner turner, and curved server.',
+    fullDescription: 'Designed with ergonomic flat handles and gentle chamfered edges that safeguard non-stick ceramic cookware and cast iron pans. Denser than typical hardwoods, bamboo naturally resists heat, odor retention, and moisture warping.',
+    details: [
+      '5 distinct ergonomic profiles for sautéing, stirring, flipping, and tasting',
+      '30cm comfortable reach with heat-insulated grip',
+      'Non-reactive with acidic foods like tomatoes and citrus',
+      'Pre-conditioned with food-safe botanical plant oil',
+    ],
+    care: 'Hand-wash only with mild soap. Avoid soaking in water or dishwasher cycles. Re-oil periodically with walnut or mineral oil.',
+    variants: {
+      type: 'variant',
+      label: 'Handle Finish',
+      options: [
+        { name: 'Natural Honey Bamboo', value: 'natural' },
+        { name: 'Smoked Amber Steam', value: 'smoked' },
+      ],
+    },
+    inStock: true,
+  },
+  {
+    id: 'bamboo-serving-boat',
+    name: 'Bamboo Serving Essentials',
+    category: 'Kitchen',
+    material: 'Layered Cross-Grain Bamboo',
+    price: 1599,
+    originalPrice: 1899,
+    image: '/src/assets/images/product_serving_board_1791951498473.jpg',
+    shortDescription: 'Sculpted organic serving boat with matching ergonomic hand-carved salad tossers.',
+    fullDescription: 'A centerpiece for mindful shared meals. Hand-shaped from cross-laminated organic bamboo stalks for exceptional structural stability. Perfect for fresh greens, roasted vegetables, artisanal bread, or fruit displays.',
+    details: [
+      'Large organic concave serving dish (38cm length x 22cm width)',
+      'Pair of contoured bamboo salad spoons designed to nest comfortably',
+      'Smooth satin-buffed edges with water-repellent plant wax seal',
+      'Zero synthetic resins or formaldehyde glues used in bonding',
+    ],
+    care: 'Wipe clean with a damp cloth or warm rinse. Store in a dry, ventilated area away from direct radiator heat.',
+    variants: {
+      type: 'variant',
+      label: 'Grain Style',
+      options: [
+        { name: 'Linear Grain Platter', value: 'linear' },
+        { name: 'Organic Curve Silhouette', value: 'curve' },
+      ],
+    },
+    inStock: true,
+  },
+  {
+    id: 'bamboo-tee-everyday',
+    name: 'Everyday Bamboo-Fiber Tee',
+    category: 'Clothing',
+    material: '70% Organic Bamboo Viscose, 30% Organic Cotton (200 GSM)',
+    price: 1499,
+    originalPrice: 1699,
+    image: '/src/assets/images/product_bamboo_tee_1791951464004.jpg',
+    shortDescription: 'Incredibly soft, naturally thermo-regulating unisex crewneck crafted from fine bamboo cellulose.',
+    fullDescription: 'A foundational staple for conscious wardrobes. Bamboo fiber provides a silky, cloud-soft tactile hand feel with natural temperature regulation that keeps you cool in summer heat and comfortable in transitional breezes.',
+    details: [
+      'Breathable micro-pore bamboo fiber weave (200 GSM weight)',
+      'Naturally hypoallergenic and anti-odor for extended wear',
+      'Tailored modern relaxed fit with reinforced ribbed collar',
+      'Pre-shrunk fabric with OEKO-TEX standard non-toxic natural dyes',
+    ],
+    care: 'Machine wash cold on gentle cycle with like colors. Line dry in shade to preserve fiber strength and reduce energy use.',
+    variants: {
+      type: 'color',
+      label: 'Colorway',
+      options: [
+        { name: 'Oatmeal Chalk', value: 'oatmeal', colorHex: '#DED7C8' },
+        { name: 'Deep Moss Olive', value: 'olive', colorHex: '#4E5A44' },
+        { name: 'Charcoal Wash', value: 'charcoal', colorHex: '#2E2D2A' },
+      ],
+    },
+    inStock: true,
+  },
+  {
+    id: 'bamboo-lounge-top',
+    name: 'Relaxed Bamboo-Fiber Lounge Top',
+    category: 'Clothing',
+    material: '95% Pure Bamboo Viscose, 5% Elastane (180 GSM)',
+    price: 1799,
+    originalPrice: 1999,
+    image: '/src/assets/images/product_lounge_top_1791951532682.jpg',
+    shortDescription: 'Effortless drape top with drop-shoulder silhouette for restful living and quiet weekends.',
+    fullDescription: 'Fluid movement meets grounded sustainability. Spun from ultra-fine closed-loop bamboo yarns that glide smoothly against the skin. Features a relaxed scooped neck, dropped shoulder seams, and a curved hemline.',
+    details: [
+      'Silky tactile fluidity with four-way stretch comfort',
+      'Naturally static-resistant and gentle on sensitive skin',
+      'Tag-free comfort collar with heat-transferred care instructions',
+      'Minimal carbon footprint manufacturing in certified solar-powered mills',
+    ],
+    care: 'Gentle cycle inside out in a laundry mesh bag. Dry flat away from direct sunlight. Do not bleach or tumble dry.',
+    variants: {
+      type: 'color',
+      label: 'Colorway',
+      options: [
+        { name: 'Deep Moss', value: 'moss', colorHex: '#48543E' },
+        { name: 'Warm Ivory', value: 'ivory', colorHex: '#EDE8DE' },
+        { name: 'Slate Clay', value: 'slate', colorHex: '#4B4D4F' },
+      ],
+    },
+    inStock: true,
+  },
+];
+
+export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: 'test-1',
+    name: 'Ananya S.',
+    location: 'Bengaluru, KA',
+    product: 'On-the-Go Reusable Straw Kit',
+    rating: 5,
+    quote: 'The canvas wrap lives permanently in my everyday bag. It never leaves any metallic or paper aftertaste in iced coffee, and the straws clean so easily with the included plant brush.',
+    verifiedSample: true,
+  },
+  {
+    id: 'test-2',
+    name: 'Rohan M.',
+    location: 'Mumbai, MH',
+    product: 'Minimal Bamboo Kitchen Utensil Set',
+    rating: 5,
+    quote: 'The weight and balance in hand are remarkable. I cook in ceramic pans daily, and these bamboo spoons have completely replaced silicone and wood without any scorching or warping.',
+    verifiedSample: true,
+  },
+  {
+    id: 'test-3',
+    name: 'Tara V.',
+    location: 'New Delhi, DL',
+    product: 'Everyday Bamboo-Fiber Tee',
+    rating: 5,
+    quote: 'Genuinely the softest t-shirt I own. It stays cool even in humid 35°C weather and drapes so much better than heavy regular cotton. Ordering the olive top next.',
+    verifiedSample: true,
+  },
+];
+
+export const PARTNER_LOGOS = [
+  { name: 'TERRA SPACES', tagline: 'Sustainable Architecture' },
+  { name: 'ARCADIA LIVING', tagline: 'Conscious Home goods' },
+  { name: 'NORDIC ROOTS', tagline: 'Eco Design Studio' },
+  { name: 'VERDANT COLLECTIVE', tagline: 'Zero Waste Retail' },
+  { name: 'FOLK & FORM', tagline: 'Artisanal Lifestyle' },
+  { name: 'THE SLOW HOME', tagline: 'Mindful Living Journal' },
+];

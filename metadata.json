@@ -1,0 +1,6 @@
+{
+  "name": "STICKS - Sustainable Bamboo Essentials",
+  "description": "Thoughtfully designed bamboo essentials for a lighter, more conscious everyday. Premium reusable straws, kitchenware, and bamboo-fiber apparel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
